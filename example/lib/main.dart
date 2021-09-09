@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Chips Input',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.green),
         // brightness: Brightness.dark,
       ),
       home: MyHomePage(),
@@ -86,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: const InputDecoration(
                   // prefixIcon: Icon(Icons.search),
                   // hintText: formControl.hint,
-                  labelText: 'Select People',
+                  hintText: 'Select People',
                   // enabled: false,
                   // errorText: field.errorText,
                 ),
